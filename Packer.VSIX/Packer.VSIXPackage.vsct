@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+
+	<Commands package="guidContextPackerToolPackage">
+		<!-- 1. Referera till din bildfil här (16x16 px) -->
+		<Bitmaps>
+			<Bitmap guid="guidPackerIcons" href="Resources\Logos\PackerToolLogo_16x16.png" usedList="bmpPic1" />
+		</Bitmaps>
+
+		<Buttons>
+			<Button guid="guidContextPackerToolPackageCmdSet" id="ShowPackerCommandId" priority="0x0100" type="Button">
+				<Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
+
+				<!-- 2. Koppla ikonen till kommandot -->
+				<Icon guid="guidPackerIcons" id="bmpPic1" />
+
+				<Strings>
+					<ButtonText>Context Packer</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="guidContextPackerToolPackage" value="{d9fa1d44-ddf7-4081-af9a-1861f49b003a}" />
+
+		<GuidSymbol name="guidContextPackerToolPackageCmdSet" value="{1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d}">
+			<IDSymbol name="ShowPackerCommandId" value="0x0100" />
+		</GuidSymbol>
+
+		<!-- 3. Symboldeklaration för ikonen -->
+		<GuidSymbol name="guidPackerIcons" value="{e2a1c4b3-5d6e-7f8a-9b0c-1d2e3f4a5b6c}">
+			<IDSymbol name="bmpPic1" value="1" />
+		</GuidSymbol>
+	</Symbols>
+
+</CommandTable>

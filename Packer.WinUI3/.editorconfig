@@ -1,0 +1,5 @@
+﻿root = true
+
+[*.cs]
+file_header_template = Copyright (c) 2026 Kadmium (Emil Fredrik SjÃ¶stedt). All rights reserved.\nLicensed under the Kadmium Software & Source Code License Agreement.\nSee LICENSE.txt in the project root for full license terms.
+dotnet_diagnostic.IDE0073.severity = warning

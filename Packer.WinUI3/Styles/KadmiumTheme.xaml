@@ -1,0 +1,156 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Kadmium Theme Colors & Brushes -->
+    <Color x:Key="KadmiumAccentColor">#5EA3D9</Color>
+    <Color x:Key="KadmiumDarkBlue">#2C3947</Color>
+    <Color x:Key="KadmiumBlueGray">#546B7D</Color>
+    <Color x:Key="KadmiumDeepDark">#090C10</Color>
+    <Color x:Key="KadmiumErrorColor">#C05555</Color>
+    <Color x:Key="KadmiumWarningColor">#CCA460</Color>
+    <Color x:Key="KadmiumSuccessColor">#48A999</Color>
+
+    <SolidColorBrush x:Key="KadmiumErrorBrush" Color="{StaticResource KadmiumErrorColor}"/>
+    <SolidColorBrush x:Key="KadmiumWarningBrush" Color="{StaticResource KadmiumWarningColor}"/>
+    <SolidColorBrush x:Key="KadmiumSuccessBrush" Color="{StaticResource KadmiumSuccessColor}"/>
+    <SolidColorBrush x:Key="KadmiumAccentBrush" Color="{StaticResource KadmiumAccentColor}"/>
+    <SolidColorBrush x:Key="KadmiumDarkBlueBrush" Color="{StaticResource KadmiumDarkBlue}"/>
+    <SolidColorBrush x:Key="KadmiumBlueGrayBrush" Color="{StaticResource KadmiumBlueGray}"/>
+
+    <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{StaticResource KadmiumDeepDark}"/>
+    <SolidColorBrush x:Key="LayerFillColorDefaultBrush" Color="#12161B"/>
+    <SolidColorBrush x:Key="CardBackgroundFillColorDefaultBrush" Color="#12161B"/>
+    <SolidColorBrush x:Key="CardStrokeColorDefaultBrush" Color="#1AFFFFFF"/>
+    <SolidColorBrush x:Key="ControlStrokeColorDefaultBrush" Color="#1AFFFFFF"/>
+
+    <!-- ================= Fonts ================= -->
+    <!-- Rubrics: Michroma -->
+    <FontFamily x:Key="KadmiumHeaderFont">ms-appx:///Assets/Fonts/Michroma-Regular.ttf#Michroma</FontFamily>
+
+    <!-- Text: Inter -->
+    <FontFamily x:Key="KadmiumBodyFont">ms-appx:///Assets/Fonts/Inter-regular.ttf#Inter</FontFamily>
+    <FontFamily x:Key="KadmiumBodyItalicFont">ms-appx:///Assets/Fonts/Inter-italic.ttf#Inter</FontFamily>
+
+
+    <!-- ================= ToggleSwitch Resources ================= -->
+    <CornerRadius x:Key="ToggleSwitchTrackCornerRadius">2</CornerRadius>
+    <CornerRadius x:Key="ToggleSwitchKnobCornerRadius">2</CornerRadius>
+
+    <SolidColorBrush x:Key="ToggleSwitchFillOff" Color="#090C10"/>
+    <SolidColorBrush x:Key="ToggleSwitchFillOffPointerOver" Color="#12161B"/>
+    <SolidColorBrush x:Key="ToggleSwitchFillOffPressed" Color="#12161B"/>
+    <SolidColorBrush x:Key="ToggleSwitchStrokeOff" Color="#546B7D"/>
+    <SolidColorBrush x:Key="ToggleSwitchStrokeOffPointerOver" Color="#5EA3D9"/>
+    <SolidColorBrush x:Key="ToggleSwitchKnobFillOff" Color="#546B7D"/>
+    <SolidColorBrush x:Key="ToggleSwitchKnobFillOffPointerOver" Color="#5EA3D9"/>
+    <SolidColorBrush x:Key="ToggleSwitchKnobFillOffPressed" Color="White"/>
+
+    <SolidColorBrush x:Key="ToggleSwitchFillOn" Color="#5EA3D9"/>
+    <SolidColorBrush x:Key="ToggleSwitchFillOnPointerOver" Color="#7BB6E4"/>
+    <SolidColorBrush x:Key="ToggleSwitchFillOnPressed" Color="#2C3947"/>
+    <SolidColorBrush x:Key="ToggleSwitchStrokeOn" Color="#5EA3D9"/>
+    <SolidColorBrush x:Key="ToggleSwitchStrokeOnPointerOver" Color="#7BB6E4"/>
+    <SolidColorBrush x:Key="ToggleSwitchKnobFillOn" Color="#090C10"/>
+    <SolidColorBrush x:Key="ToggleSwitchKnobFillOnPointerOver" Color="#090C10"/>
+    <SolidColorBrush x:Key="ToggleSwitchKnobFillOnPressed" Color="#090C10"/>
+
+    <SolidColorBrush x:Key="ToggleSwitchHeaderForeground" Color="White"/>
+    <SolidColorBrush x:Key="ToggleSwitchContentForeground" Color="#546B7D"/>
+
+
+    <!-- ================= Default Controls Styling ================= -->
+
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumBodyFont}"/>
+        <Setter Property="FontSize" Value="13"/>
+    </Style>
+
+  
+    <Style TargetType="TextBox">
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumBodyFont}"/>
+        <Setter Property="FontSize" Value="13"/>
+    </Style>
+
+
+    <Style TargetType="ComboBox">
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumBodyFont}"/>
+        <Setter Property="FontSize" Value="13"/>
+    </Style>
+
+
+    <!-- ================= Specific Styles ================= -->
+
+    <Style x:Key="KadmiumPageHeaderStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumHeaderFont}"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="{StaticResource KadmiumAccentBrush}"/>
+    </Style>
+
+    <Style x:Key="KadmiumSectionHeaderStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumHeaderFont}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="{StaticResource KadmiumAccentBrush}"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+
+
+    <Style x:Key="KadmiumToggleSwitchStyle" TargetType="ToggleSwitch">
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumBodyFont}"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="OnContent" Value="Active"/>
+        <Setter Property="OffContent" Value="Inactive"/>
+    </Style>
+
+
+    <Style x:Key="KadmiumPrimaryButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource KadmiumDarkBlueBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="{StaticResource KadmiumBodyFont}"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Padding" Value="16,8"/>
+        <Setter Property="CornerRadius" Value="4"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="#33FFFFFF"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid x:Name="RootGrid" Background="Transparent" CornerRadius="{TemplateBinding CornerRadius}">
+                        <Border x:Name="BackgroundElement" 
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="{TemplateBinding CornerRadius}"/>
+                        <ContentPresenter x:Name="ContentPresenter"
+                                          Content="{TemplateBinding Content}"
+                                          Padding="{TemplateBinding Padding}"
+                                          HorizontalContentAlignment="Center"
+                                          VerticalContentAlignment="Center"/>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal"/>
+                                <VisualState x:Name="PointerOver">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundElement" Storyboard.TargetProperty="BorderBrush">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource KadmiumAccentBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundElement" Storyboard.TargetProperty="Background">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource KadmiumBlueGrayBrush}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

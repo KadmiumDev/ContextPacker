@@ -1,0 +1,10 @@
+C:\KadmiumTech\repos\PackerTool\Packer.Core\bin\Release\netstandard2.0\Packer.Core.deps.json
+C:\KadmiumTech\repos\PackerTool\Packer.Core\bin\Release\netstandard2.0\Packer.Core.dll
+C:\KadmiumTech\repos\PackerTool\Packer.Core\bin\Release\netstandard2.0\Packer.Core.pdb
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.csproj.AssemblyReference.cache
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.AssemblyInfoInputs.cache
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.AssemblyInfo.cs
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.csproj.CoreCompileInputs.cache
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.dll
+C:\KadmiumTech\repos\PackerTool\Packer.Core\obj\Release\netstandard2.0\Packer.Core.pdb

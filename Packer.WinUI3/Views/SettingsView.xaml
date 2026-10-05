@@ -1,0 +1,57 @@
+<Page
+    x:Class="Packer.WinUI3.Views.SettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ScrollViewer Padding="24" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Spacing="16" MaxWidth="550" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,20">
+            <TextBlock Text="SETTINGS" Style="{StaticResource KadmiumPageHeaderStyle}" HorizontalAlignment="Left"/>
+
+            <!-- Filter Settings Card -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" 
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                    BorderThickness="1" CornerRadius="6" Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="FILTERING &amp; DISCOVERY" Style="{StaticResource KadmiumSectionHeaderStyle}"/>
+
+                    <TextBox x:Name="AllowedExtBox" Header="Allowed Extensions" PlaceholderText=".cs,.xaml,..."/>
+                    <TextBox x:Name="IgnoredFoldersBox" Header="Ignored Folders" PlaceholderText="bin,obj,.git,..."/>
+                    <TextBox x:Name="ModuleAnchorsBox" Header="Module Folder Anchors" PlaceholderText="Plugins,repos,Source,..."/>
+                </StackPanel>
+            </Border>
+
+            <!-- Limits & Thresholds Card -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" 
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                    BorderThickness="1" CornerRadius="6" Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="LIMITS &amp; THRESHOLDS" Style="{StaticResource KadmiumSectionHeaderStyle}"/>
+
+                    <TextBox x:Name="LargeFileThresholdBox" Header="Large File Warning Threshold (Chars)" PlaceholderText="Default: 50000"/>
+                    <TextBox x:Name="MaxCharsBox" Header="Max Chars Per Output File (Chunking)" PlaceholderText="Default: 3000000"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Cache & Privacy Card -->
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" 
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" 
+                    BorderThickness="1" CornerRadius="6" Padding="16">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="STORAGE &amp; PRIVACY" Style="{StaticResource KadmiumSectionHeaderStyle}"/>
+
+                    <TextBox x:Name="CachePathBox" Header="Custom Cache Output (Leave blank for default)" PlaceholderText="Default: %LocalAppData%/KadmiumCache"/>
+                    <ToggleSwitch x:Name="RedactToggle" 
+                                  Header="Workstation Privacy (Redact Usernames)"
+                                  Style="{StaticResource KadmiumToggleSwitchStyle}"
+                                  Margin="0,4,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Button Content="SAVE SETTINGS" 
+                    Style="{StaticResource KadmiumPrimaryButtonStyle}" 
+                    Click="Save_Click" 
+                    HorizontalAlignment="Stretch" 
+                    Margin="0,8,0,0"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
