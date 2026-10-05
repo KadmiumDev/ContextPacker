@@ -1,0 +1,22 @@
+# Visual Studio / User settings (.vs folder & .suo files)
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs & cache
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.DotSettings.user
+
+# Kadmium Local Cache / Output
+KadmiumCache/
+KadmiumCache_Dev/
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
