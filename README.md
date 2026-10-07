@@ -10,10 +10,14 @@ See `https://www.kadmium.dev/legal/software-source-code-license-agreement` for f
 
 # PackerTool Suite
 
+
+[![Kickstarter Live](https://img.shields.io/badge/Kickstarter-Back_Aether_%26_Sirius-05CE78?style=for-the-badge&logo=kickstarter&logoColor=white)](https://www.kickstarter.com/projects/kadmium/sirius-open-world-space-mmo-and-native-ue5-c-frameworks)
 [![Kadmium Dev](https://img.shields.io/badge/Kadmium-Website-5EA3D9?style=for-the-badge&logo=firefox)](https://www.kadmium.dev/dev-tech/c-tools/context-packer)
 [![DEV.to Post](https://img.shields.io/badge/DEV.to-Why_I_Built_Context_Packer-0A0A0A?style=for-the-badge&logo=devto)](https://dev.to/kadmium/why-i-built-an-offline-c-tool-to-turn-entire-codebases-into-obsidian-notes-and-sharable-docs-24eh)
 [![DEV.to Devlog](https://img.shields.io/badge/DEV.to-Architecture_%26_Devlog-0A0A0A?style=for-the-badge&logo=devto)](https://dev.to/kadmium/devlog-indepth-context-packer-architecture-privacy-engines-engine-trade-offs-1ohk)
 [![Gumroad](https://img.shields.io/badge/Gumroad-Get_Context_Packer-FF90E8?style=for-the-badge&logo=gumroad&logoColor=black)](https://kadmium.gumroad.com/l/ContextPacker)
+
+> **Dev Announcement:** I just launched a Kickstarter for my new 6-DOF space game **Sirius** and the **Aether/Kinetix** frameworks. If you like my developer tools, check out the game dev side of my work! [Support the Kickstarter here!](https://www.kickstarter.com/projects/kadmium/sirius-open-world-space-mmo-and-native-ue5-c-frameworks)
 
 A modular developer toolkit for aggregating, sanitizing, and packing source code into structured Markdown context optimized for Large Language Models (Claude, ChatGPT, Gemini) and note-taking systems like Obsidian.
 
