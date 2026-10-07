@@ -1,1 +1,1 @@
-See `https://www.kadmium.dev/legal/software-source-code-license-agreement` for full terms.
+See https://www.kadmium.dev/legal/software-source-code-license-agreement for full terms.
